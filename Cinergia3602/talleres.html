@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talleres | Cinergia 360</title>
+  <meta name="description" content="Talleres participativos de Cinergia 360: espacios de práctica colectiva para traducir y explorar la experiencia cinematográfica desde enfoques inclusivos.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="talleres.css" />
+</head>
+
+<body>
+
+  <!-- ====== NAVEGACIÓN ====== -->
+  <nav class="site-nav" aria-label="Navegación principal">
+    <div class="site-nav__inner">
+      <a class="site-nav__brand" href="index.html" aria-label="Cinergia 360 — Inicio">
+        <span class="site-nav__brand-name">Cinergia 360</span>
+        <span class="site-nav__brand-sub">Mediación Web</span>
+      </a>
+      <ul class="site-nav__links" role="list">
+        <li><a class="site-nav__link" href="index.html">Inicio</a></li>
+        <li><a class="site-nav__link" href="podcast.html">Podcast</a></li>
+        <li><a class="site-nav__link" href="repositorio.html">Repositorio</a></li>
+        <li><a class="site-nav__link" href="talleres.html" aria-current="page">Talleres</a></li>
+        <li><a class="site-nav__link" href="exposicion.html">Exposición</a></li>
+      </ul>
+      <button class="site-nav__toggle" type="button" aria-label="Abrir menú de navegación">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main class="comp-main" id="contenido-principal">
+
+    <!-- ====== HERO ====== -->
+    <header class="comp-hero" aria-labelledby="talleres-title">
+      <p class="comp-hero__label">
+        <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+        Componente del sistema · Participación
+      </p>
+      <h1 id="talleres-title" class="comp-hero__title">Talleres</h1>
+      <p class="comp-hero__desc">
+        Espacios de práctica colectiva donde participantes con distintas capacidades y perspectivas
+        exploran, traducen y co-crean mediaciones accesibles alrededor de la experiencia cinematográfica.
+      </p>
+      <div class="comp-hero__actions">
+        <a class="comp-btn comp-btn--primary" href="#modalidades">
+          <i class="fa-solid fa-list-ul" aria-hidden="true"></i>
+          Ver modalidades
+        </a>
+        <a class="comp-btn comp-btn--ghost" href="repositorio.html">
+          <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+          Ir al repositorio
+        </a>
+      </div>
+    </header>
+
+    <!-- ====== QUÉ SON LOS TALLERES ====== -->
+    <section class="comp-section" aria-labelledby="que-son-title">
+      <div class="comp-section__head">
+        <p class="comp-section__label">Descripción del componente</p>
+        <h2 id="que-son-title" class="comp-h2">¿Qué son los talleres de Cinergia 360?</h2>
+        <p class="comp-muted">
+          Los talleres son el componente participativo del sistema. Su objetivo es construir
+          mediaciones culturales de forma colectiva, con la experiencia y perspectiva de personas
+          con distintas condiciones, habilidades y formas de percibir.
+        </p>
+      </div>
+
+      <div class="comp-cards-grid">
+
+        <article class="comp-card" aria-labelledby="tall-desc-1">
+          <div class="comp-card__icon" aria-hidden="true"><i class="fa-solid fa-pencil"></i></div>
+          <h3 class="comp-card__title" id="tall-desc-1">Construcción de mediaciones</h3>
+          <!-- TODO: reemplazar con texto real -->
+          <p class="comp-card__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </article>
+
+        <article class="comp-card" aria-labelledby="tall-desc-2">
+          <div class="comp-card__icon" aria-hidden="true"><i class="fa-solid fa-handshake"></i></div>
+          <h3 class="comp-card__title" id="tall-desc-2">Perspectivas diversas</h3>
+          <!-- TODO: reemplazar con texto real -->
+          <p class="comp-card__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </article>
+
+        <article class="comp-card" aria-labelledby="tall-desc-3">
+          <div class="comp-card__icon" aria-hidden="true"><i class="fa-solid fa-seedling"></i></div>
+          <h3 class="comp-card__title" id="tall-desc-3">Resultados al sistema</h3>
+          <!-- TODO: reemplazar con texto real -->
+          <p class="comp-card__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====== MODALIDADES ====== -->
+    <section class="comp-section" id="modalidades" aria-labelledby="modalidades-title">
+      <div class="comp-section__head">
+        <p class="comp-section__label">Tipos de taller</p>
+        <h2 id="modalidades-title" class="comp-h2">Modalidades</h2>
+        <p class="comp-muted">Los talleres se adaptan según el proyecto, el grupo y los objetivos de mediación.</p>
+      </div>
+
+      <div class="comp-cards-grid">
+
+        <article class="comp-card" aria-labelledby="mod1-title">
+          <div class="comp-card__icon" aria-hidden="true"><i class="fa-solid fa-microphone-lines"></i></div>
+          <span class="comp-card__tag">Audiodescripción</span>
+          <h3 class="comp-card__title" id="mod1-title">Taller de audiodescripción</h3>
+          <!-- TODO: reemplazar con texto real -->
+          <p class="comp-card__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <span class="comp-card__status comp-card__status--ok" aria-label="Estado: Disponible">
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Disponible
+          </span>
+        </article>
+
+        <article class="comp-card" aria-labelledby="mod2-title">
+          <div class="comp-card__icon" aria-hidden="true"><i class="fa-solid fa-hands"></i></div>
+          <span class="comp-card__tag">Multisensorial</span>
+          <h3 class="comp-card__title" id="mod2-title">Taller de traducción sensorial</h3>
+          <!-- TODO: reemplazar con texto real -->
+          <p class="comp-card__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <span class="comp-card__status comp-card__status--soon" aria-label="Estado: Próximamente">
+            <i class="fa-solid fa-clock" aria-hidden="true"></i> Próximamente
+          </span>
+        </article>
+
+        <article class="comp-card" aria-labelledby="mod3-title">
+          <div class="comp-card__icon" aria-hidden="true"><i class="fa-solid fa-file-alt"></i></div>
+          <span class="comp-card__tag">Guiones sensoriales</span>
+          <h3 class="comp-card__title" id="mod3-title">Taller de guiones sensoriales</h3>
+          <!-- TODO: reemplazar con texto real -->
+          <p class="comp-card__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <span class="comp-card__status comp-card__status--soon" aria-label="Estado: Próximamente">
+            <i class="fa-solid fa-clock" aria-hidden="true"></i> Próximamente
+          </span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====== METODOLOGÍA ====== -->
+    <section class="comp-section" aria-labelledby="metodologia-title">
+      <div class="comp-section__head">
+        <p class="comp-section__label">Cómo funciona</p>
+        <h2 id="metodologia-title" class="comp-h2">Metodología general</h2>
+      </div>
+
+      <div class="comp-panel">
+        <!-- TODO: reemplazar con texto real -->
+        <ul class="comp-list" aria-label="Pasos de la metodología de los talleres">
+          <li><strong>Exploración:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li><strong>Identificación:</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+          <li><strong>Producción:</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</li>
+          <li><strong>Revisión:</strong> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</li>
+          <li><strong>Integración:</strong> Deserunt mollit anim id est laborum et dolore magna aliqua.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="comp-footer" role="contentinfo">
+    <p>© 2026 Cinergia 360 — Talleres · <a href="index.html">Inicio</a></p>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script src="talleres.js"></script>
+</body>
+</html>

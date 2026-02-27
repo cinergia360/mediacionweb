@@ -1,0 +1,238 @@
+/* =========================================================
+   CINERGIA 360 · NAVEGACIÓN GLOBAL
+   Incluir en todas las páginas (antes del CSS de la página).
+   Requiere Font Awesome + Lexend cargados en el HTML.
+   Modo oscuro: añadir clase site-nav--dark al <nav>.
+========================================================= */
+
+.site-nav {
+  /* Tokens locales — modo claro (páginas internas) */
+  --nav-bg: rgba(245, 244, 241, 0.92);
+  --nav-text: #121212;
+  --nav-text-sub: rgba(18, 18, 18, 0.55);
+  --nav-border: rgba(18, 18, 18, 0.10);
+  --nav-hover-bg: rgba(76, 78, 133, 0.07);
+  --nav-active-color: #4c4e85;
+  --nav-height: 62px;
+  --nav-radius: 8px;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background: var(--nav-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--nav-border);
+  font-family: 'Lexend', system-ui, sans-serif;
+}
+
+/* Modo oscuro (para home sobre hero dark) */
+.site-nav--dark {
+  --nav-bg: rgba(0, 0, 0, 0.80);
+  --nav-text: #ffffff;
+  --nav-text-sub: rgba(255, 255, 255, 0.55);
+  --nav-border: rgba(255, 255, 255, 0.10);
+  --nav-hover-bg: rgba(255, 255, 255, 0.08);
+  --nav-active-color: #f8f6e4;
+}
+
+.site-nav__inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* ====== BRAND / LOGO ====== */
+.site-nav__brand {
+  text-decoration: none;
+  color: var(--nav-text);
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.1;
+  flex-shrink: 0;
+  border-radius: var(--nav-radius);
+  padding: 0.35rem 0.5rem;
+  transition: background 0.18s ease, opacity 0.18s ease;
+}
+
+.site-nav__brand:hover {
+  background: var(--nav-hover-bg);
+}
+
+.site-nav__brand:focus-visible {
+  outline: 2px solid #4c4e85;
+  outline-offset: 2px;
+}
+
+.site-nav__brand-name {
+  font-size: 0.97rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.site-nav__brand-sub {
+  font-size: 0.7rem;
+  color: var(--nav-text-sub);
+  font-weight: 400;
+}
+
+/* ====== LINKS ====== */
+.site-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  list-style: none;
+}
+
+.site-nav__link {
+  display: inline-block;
+  padding: 0.5rem 0.72rem;
+  border-radius: var(--nav-radius);
+  text-decoration: none;
+  color: var(--nav-text);
+  font-size: 0.87rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.site-nav__link:hover {
+  background: var(--nav-hover-bg);
+}
+
+.site-nav__link[aria-current="page"] {
+  color: var(--nav-active-color);
+  font-weight: 700;
+  background: var(--nav-hover-bg);
+}
+
+.site-nav__link:focus-visible {
+  outline: 2px solid #4c4e85;
+  outline-offset: 2px;
+}
+
+/* ====== HAMBURGER ====== */
+.site-nav__toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--nav-border);
+  border-radius: var(--nav-radius);
+  background: var(--nav-hover-bg);
+  color: var(--nav-text);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.18s ease, border-color 0.18s ease;
+  font-size: 0.95rem;
+}
+
+.site-nav__toggle:hover {
+  background: rgba(76, 78, 133, 0.12);
+}
+
+.site-nav__toggle:focus-visible {
+  outline: 2px solid #4c4e85;
+  outline-offset: 2px;
+}
+
+/* ====== BREADCRUMB (subpáginas) ====== */
+.site-breadcrumb {
+  background: transparent;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.07);
+  font-family: 'Lexend', system-ui, sans-serif;
+}
+
+.site-breadcrumb__inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0.55rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  color: rgba(18, 18, 18, 0.55);
+  flex-wrap: wrap;
+}
+
+.site-breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.site-breadcrumb__link {
+  color: rgba(18, 18, 18, 0.55);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.site-breadcrumb__link:hover {
+  color: #4c4e85;
+}
+
+.site-breadcrumb__sep {
+  opacity: 0.45;
+  font-size: 0.7rem;
+}
+
+.site-breadcrumb__current {
+  color: #121212;
+  font-weight: 600;
+}
+
+/* ====== MOBILE ====== */
+@media (max-width: 780px) {
+  .site-nav__toggle {
+    display: flex;
+  }
+
+  .site-nav__links {
+    display: none;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--nav-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--nav-border);
+    padding: 0.6rem 1.25rem 1rem;
+    z-index: 99;
+  }
+
+  .site-nav__links.is-open {
+    display: flex;
+  }
+
+  .site-nav__link {
+    padding: 0.8rem 0.75rem;
+    border-radius: 10px;
+    font-size: 0.93rem;
+    border-bottom: 1px solid var(--nav-border);
+  }
+
+  .site-nav__link:last-child {
+    border-bottom: none;
+  }
+
+  .site-breadcrumb__inner {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-nav__brand-sub {
+    display: none;
+  }
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repositorio | Cinergia 360</title>
+  <meta name="description" content="Repositorio de proyectos y recursos de mediación de Cinergia 360. Explora los universos narrativos trabajados y sus materiales accesibles.">
+
+  <!-- Tipografía -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Navegación global -->
+  <link rel="stylesheet" href="nav.css" />
+
+  <!-- CSS del repositorio -->
+  <link rel="stylesheet" href="repositorio.css" />
+</head>
+
+<body>
+
+  <!-- ====== NAVEGACIÓN GLOBAL ====== -->
+  <nav class="site-nav" aria-label="Navegación principal">
+    <div class="site-nav__inner">
+      <a class="site-nav__brand" href="index.html" aria-label="Cinergia 360 — Inicio">
+        <span class="site-nav__brand-name">Cinergia 360</span>
+        <span class="site-nav__brand-sub">Mediación Web</span>
+      </a>
+      <ul class="site-nav__links" role="list">
+        <li><a class="site-nav__link" href="index.html">Inicio</a></li>
+        <li><a class="site-nav__link" href="podcast.html">Podcast</a></li>
+        <li><a class="site-nav__link" href="repositorio.html" aria-current="page">Repositorio</a></li>
+        <li><a class="site-nav__link" href="talleres.html">Talleres</a></li>
+        <li><a class="site-nav__link" href="exposicion.html">Exposición</a></li>
+      </ul>
+      <button class="site-nav__toggle" type="button" aria-label="Abrir menú de navegación">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main class="repo-main" id="contenido-principal">
+
+    <!-- ====== HERO / INTRO ====== -->
+    <section class="repo-hero" aria-labelledby="repo-title">
+      <p class="repo-eyebrow" aria-hidden="true">Repositorio de mediación</p>
+      <h1 id="repo-title">Proyectos, películas y recursos</h1>
+      <p class="repo-hero__lead">
+        Explora los universos narrativos trabajados en Cinergia 360. Cada proyecto puede incluir
+        una <strong>ficha de proyecto</strong> y/o un conjunto de <strong>recursos de mediación</strong>
+        (materiales de consulta, video, modelos 3D o apoyos accesibles).
+      </p>
+    </section>
+
+    <!-- ====== ORIENTACIÓN ====== -->
+    <section class="repo-orientacion" aria-labelledby="repo-orientacion-title">
+      <div class="repo-panel repo-panel--info">
+        <h2 id="repo-orientacion-title">Cómo usar este repositorio</h2>
+        <ul class="repo-guide-list">
+          <li>
+            <strong>Ver ficha:</strong> información general del proyecto, enfoque y contexto de mediación.
+          </li>
+          <li>
+            <strong>Ver recursos:</strong> materiales disponibles para consulta o exploración
+            (video, modelos 3D, audiodescripción).
+          </li>
+          <li>
+            <strong>Estado:</strong> algunos proyectos están en proceso y pueden aparecer como
+            <em>Próximamente</em>.
+          </li>
+        </ul>
+      </div>
+
+      <div class="repo-panel repo-panel--legend" aria-label="Leyenda de estados de los proyectos">
+        <h2>Leyenda rápida</h2>
+        <div class="repo-legend">
+          <div class="repo-legend__item">
+            <span class="status-dot status-dot--ok" aria-hidden="true"></span>
+            <span>Disponible — el proyecto tiene recursos para consultar.</span>
+          </div>
+          <div class="repo-legend__item">
+            <span class="status-dot status-dot--soon" aria-hidden="true"></span>
+            <span>Próximamente — el proyecto está en proceso de desarrollo.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== LISTADO DE PROYECTOS ====== -->
+    <section class="repo-list" aria-labelledby="proyectos-list-title">
+      <h2 id="proyectos-list-title" class="visually-hidden">Listado de proyectos</h2>
+
+      <!-- PROYECTO 1: El Laberinto del Fauno — DISPONIBLE -->
+      <article class="repo-item" aria-labelledby="repo-p1-title">
+        <div class="repo-item__media">
+          <img
+            src="img/portada1.jpeg"
+            alt="Portada de El Laberinto del Fauno: el Fauno mítico de pie frente a Ofelia en el laberinto"
+          >
+          <span class="repo-item__status repo-item__status--ok" aria-label="Estado: Disponible">
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Disponible
+          </span>
+        </div>
+
+        <div class="repo-item__info">
+          <div class="repo-meta">
+            <span class="repo-date">2026</span>
+            <span class="repo-tag">Exposición multisensorial</span>
+          </div>
+
+          <h2 class="repo-title" id="repo-p1-title">El Laberinto del Fauno</h2>
+
+          <p class="repo-desc">
+            Traducción del universo narrativo a una experiencia multisensorial: modelos 3D con
+            descripción sonora, video de mediación y guía accesible de exploración.
+          </p>
+
+          <div class="repo-actions">
+            <a class="repo-btn primary" href="ficha-fauno.html" aria-label="Ver ficha de El Laberinto del Fauno">
+              Ver ficha
+            </a>
+            <a class="repo-btn ghost" href="fauno-recursos.html" aria-label="Ver recursos de El Laberinto del Fauno">
+              Ver recursos
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROYECTO 2: Amores Perros — PRÓXIMAMENTE -->
+      <article class="repo-item" aria-labelledby="repo-p2-title">
+        <div class="repo-item__media">
+          <img
+            src="img/portada2.jpeg"
+            alt="Portada de Amores Perros: imagen urbana de Ciudad de México en blanco y negro"
+          >
+          <span class="repo-item__status repo-item__status--soon" aria-label="Estado: Próximamente">
+            <i class="fa-solid fa-clock" aria-hidden="true"></i> Próximamente
+          </span>
+        </div>
+
+        <div class="repo-item__info">
+          <div class="repo-meta">
+            <span class="repo-date">2026</span>
+            <span class="repo-tag">Exposición multisensorial</span>
+          </div>
+
+          <h2 class="repo-title" id="repo-p2-title">Amores Perros</h2>
+
+          <p class="repo-desc">
+            Actividad participativa para construir mediaciones accesibles: guiones sensoriales,
+            prototipos y retroalimentación de usuarios. En desarrollo.
+          </p>
+
+          <div class="repo-actions">
+            <a
+              class="repo-btn primary is-disabled"
+              href="#"
+              aria-disabled="true"
+              tabindex="-1"
+              aria-label="Ficha de Amores Perros — próximamente disponible"
+            >Ver ficha</a>
+            <a
+              class="repo-btn ghost is-disabled"
+              href="#"
+              aria-disabled="true"
+              tabindex="-1"
+              aria-label="Recursos de Amores Perros — próximamente disponibles"
+            >Ver recursos</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROYECTO 3: La Peor Persona del Mundo — PRÓXIMAMENTE -->
+      <article class="repo-item" aria-labelledby="repo-p3-title">
+        <div class="repo-item__media">
+          <img
+            src="img/portada3.jpg"
+            alt="Portada de La Peor Persona del Mundo: protagonista Julie en Oslo, Noruega"
+          >
+          <span class="repo-item__status repo-item__status--soon" aria-label="Estado: Próximamente">
+            <i class="fa-solid fa-clock" aria-hidden="true"></i> Próximamente
+          </span>
+        </div>
+
+        <div class="repo-item__info">
+          <div class="repo-meta">
+            <span class="repo-date">2026</span>
+            <span class="repo-tag">Exposición multisensorial</span>
+          </div>
+
+          <h2 class="repo-title" id="repo-p3-title">La Peor Persona del Mundo</h2>
+
+          <p class="repo-desc">
+            Mediación previa en formato web: contexto, personajes, espacios, claves emocionales
+            y accesibilidad antes de la visita.
+          </p>
+
+          <div class="repo-actions">
+            <a
+              class="repo-btn primary is-disabled"
+              href="#"
+              aria-disabled="true"
+              tabindex="-1"
+              aria-label="Ficha de La Peor Persona del Mundo — próximamente disponible"
+            >Ver ficha</a>
+            <a
+              class="repo-btn ghost is-disabled"
+              href="#"
+              aria-disabled="true"
+              tabindex="-1"
+              aria-label="Recursos de La Peor Persona del Mundo — próximamente disponibles"
+            >Ver recursos</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CTA CONTACTO -->
+      <div class="repo-cta">
+        <a class="repo-btn primary" href="index.html#contacto">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          Contactar
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="repo-footer" role="contentinfo">
+    <p>© 2026 Cinergia 360 — Repositorio de proyectos y recursos de mediación</p>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

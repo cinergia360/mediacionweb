@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recursos — El Laberinto del Fauno | Cinergia 360</title>
+  <meta name="description" content="Recursos de mediación para El Laberinto del Fauno: video introductorio, audios descriptivos y explorador de modelos 3D accesible.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Navegación global -->
+  <link rel="stylesheet" href="nav.css" />
+
+  <!-- CSS del repositorio (base) + recursos (capas adicionales) + página -->
+  <link rel="stylesheet" href="repositorio.css" />
+  <link rel="stylesheet" href="recursos.css" />
+  <link rel="stylesheet" href="fauno-recursos.css" />
+
+  <!-- Three.js importmap -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ====== NAVEGACIÓN GLOBAL ====== -->
+  <nav class="site-nav" aria-label="Navegación principal">
+    <div class="site-nav__inner">
+      <a class="site-nav__brand" href="index.html" aria-label="Cinergia 360 — Inicio">
+        <span class="site-nav__brand-name">Cinergia 360</span>
+        <span class="site-nav__brand-sub">Mediación Web</span>
+      </a>
+      <ul class="site-nav__links" role="list">
+        <li><a class="site-nav__link" href="index.html">Inicio</a></li>
+        <li><a class="site-nav__link" href="podcast.html">Podcast</a></li>
+        <li><a class="site-nav__link" href="repositorio.html" aria-current="page">Repositorio</a></li>
+        <li><a class="site-nav__link" href="talleres.html">Talleres</a></li>
+        <li><a class="site-nav__link" href="exposicion.html">Exposición</a></li>
+      </ul>
+      <button class="site-nav__toggle" type="button" aria-label="Abrir menú de navegación">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== BREADCRUMB ====== -->
+  <nav class="site-breadcrumb" aria-label="Ruta de navegación">
+    <div class="site-breadcrumb__inner">
+      <span class="site-breadcrumb__item">
+        <a class="site-breadcrumb__link" href="index.html">Inicio</a>
+        <span class="site-breadcrumb__sep" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
+      </span>
+      <span class="site-breadcrumb__item">
+        <a class="site-breadcrumb__link" href="repositorio.html">Repositorio</a>
+        <span class="site-breadcrumb__sep" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
+      </span>
+      <span class="site-breadcrumb__item">
+        <span class="site-breadcrumb__current">El Laberinto del Fauno — Recursos</span>
+      </span>
+    </div>
+  </nav>
+
+  <main class="repo-main" id="contenido-principal">
+
+    <!-- ====== HERO ====== -->
+    <section class="res-hero" aria-labelledby="res-title">
+      <div class="res-hero__media">
+        <img src="img/portada1.jpeg" alt="Fotograma de El Laberinto del Fauno: el Fauno, criatura mítica con cuernos, frente al laberinto de piedra">
+        <span class="res-status res-status--ok" aria-label="Estado: recursos disponibles">
+          <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+          Recursos disponibles
+        </span>
+      </div>
+
+      <div class="res-hero__info">
+        <p class="res-eyebrow">Proyecto · Recursos de mediación</p>
+
+        <div class="repo-meta">
+          <span class="repo-date">2026</span>
+          <span class="repo-tag">Exposición multisensorial</span>
+        </div>
+
+        <h1 class="res-title" id="res-title">El Laberinto del Fauno</h1>
+
+        <p class="res-subtitle">
+          Recursos de mediación para consulta y exploración del universo narrativo.
+          Aquí encontrarás un video de contextualización, audios descriptivos de escenas y
+          modelos 3D interactivos del proyecto.
+        </p>
+
+        <div class="res-actions">
+          <a class="repo-btn ghost" href="ficha-fauno.html">
+            <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+            Ver ficha del proyecto
+          </a>
+          <a class="repo-btn primary" href="#modelos">
+            <i class="fa-solid fa-cube" aria-hidden="true"></i>
+            Explorar modelos 3D
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== ORIENTACIÓN ====== -->
+    <section class="res-orientacion" aria-labelledby="orientacion-title">
+      <div class="res-panel">
+        <p class="res-panel__eyebrow">Guía de uso</p>
+        <h2 id="orientacion-title" class="res-panel__title">Cómo navegar esta página</h2>
+        <ul class="res-guide-list">
+          <li>En <strong>Video</strong> encontrarás la introducción a la experiencia.</li>
+          <li>En <strong>Audios descriptivos</strong> encontrarás audiodescripciones de escena para escucha independiente.</li>
+          <li>En <strong>Modelos 3D</strong>, selecciona un modelo del catálogo para explorarlo.</li>
+          <li>Pasa el cursor sobre las partes del modelo: escucharás una descripción sonora.</li>
+          <li>Usa la <strong>lista de partes</strong> si prefieres navegar sin el visualizador 3D.</li>
+        </ul>
+      </div>
+
+      <div class="res-panel">
+        <p class="res-panel__eyebrow">Información del proyecto</p>
+        <h2 class="res-panel__title">Contexto</h2>
+        <div class="res-mini-meta">
+          <p><strong>Proyecto:</strong> El Laberinto del Fauno</p>
+          <p><strong>Tipo:</strong> Exposición multisensorial</p>
+          <p><strong>Componente:</strong> Repositorio / mediación web</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== ACCESOS RÁPIDOS ====== -->
+    <section class="res-section res-section--nav" aria-labelledby="accesos-title">
+      <div class="res-section__head">
+        <p class="res-section__label">Navegación interna</p>
+        <h2 class="res-h2" id="accesos-title">Accesos rápidos</h2>
+        <p class="res-muted">Selecciona una sección para ir directo a su contenido.</p>
+      </div>
+
+      <div class="res-grid">
+        <a class="res-card" href="#video" aria-label="Ir a la sección de video">
+          <div class="res-card__icon" aria-hidden="true"><i class="fa-solid fa-film"></i></div>
+          <div class="res-card__txt">
+            <h3>Video</h3>
+            <p>Introducción y contextualización de la experiencia.</p>
+          </div>
+        </a>
+
+        <a class="res-card" href="#audios" aria-label="Ir a la sección de audios descriptivos">
+          <div class="res-card__icon" aria-hidden="true"><i class="fa-solid fa-headphones"></i></div>
+          <div class="res-card__txt">
+            <h3>Audios descriptivos</h3>
+            <p>Audiodescripciones de escena para escucha independiente.</p>
+          </div>
+        </a>
+
+        <a class="res-card" href="#modelos" aria-label="Ir a la sección de modelos 3D">
+          <div class="res-card__icon" aria-hidden="true"><i class="fa-solid fa-cube"></i></div>
+          <div class="res-card__txt">
+            <h3>Modelos 3D</h3>
+            <p>Exploración interactiva con audio descriptivo.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VIDEO — INTRODUCCIÓN (1 video full-width)
+    ===================================================================== -->
+    <section class="res-section" id="video" aria-labelledby="video-title">
+      <div class="res-section__head">
+        <p class="res-section__label">Categoría de recursos</p>
+        <h2 class="res-h2" id="video-title">Video</h2>
+        <p class="res-muted">
+          Contenido audiovisual de mediación para contextualizar la experiencia
+          antes de explorar los modelos 3D y recursos sonoros.
+        </p>
+      </div>
+
+      <div class="video-single-block" role="region" aria-labelledby="vid1-titulo">
+        <div class="video-single-block__content">
+          <div class="video-card__meta">
+            <span class="video-card__tag tag--intro">Introducción</span>
+            <span class="res-pill res-pill--ok" aria-label="Estado: Disponible">
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Disponible
+            </span>
+          </div>
+
+          <h3 class="video-single-block__title" id="vid1-titulo">Introducción a la experiencia</h3>
+
+          <p class="video-single-block__desc">
+            Video introductorio de contextualización para presentar la experiencia de mediación del proyecto
+            y orientar la exploración de sus recursos.
+          </p>
+
+          <div class="video-single-block__meta">
+            <span class="video-card__meta-item">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              Duración: por definir
+            </span>
+            <span class="video-card__meta-item">
+              <i class="fa-solid fa-subtitles" aria-hidden="true"></i>
+              Subtítulos: incluidos
+            </span>
+          </div>
+        </div>
+
+        <div class="video-single-block__media" aria-label="Video embebido: Introducción a la experiencia">
+          <div class="video-placeholder video-placeholder--embed video-placeholder--embed-lg">
+            <iframe
+              src="https://www.youtube.com/embed/RWJGbT6gbvI?si=KlTcif7MI0trbDtl"
+              title="Introducción a la experiencia"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- ====================================================================
+     AUDIOS DESCRIPTIVOS — 2 audios (sección independiente)
+===================================================================== -->
+<section class="res-section" id="audios" aria-labelledby="audios-title">
+  <div class="res-section__head">
+    <p class="res-section__label">Categoría de recursos</p>
+    <h2 class="res-h2" id="audios-title">Audios descriptivos</h2>
+    <p class="res-muted">
+      Recursos sonoros de mediación con audiodescripciones de escena elaboradas en taller.
+      Puedes escucharlos de forma independiente al video.
+    </p>
+  </div>
+
+  <div class="audio-cards-grid" role="list" aria-label="Audios descriptivos del proyecto">
+
+    <!-- Audio 1 -->
+    <article class="audio-card" role="listitem" aria-labelledby="aud1-titulo">
+      <div class="audio-card__head">
+        <div class="audio-card__meta">
+          <span class="video-card__tag tag--audiodesc">Audiodescripción · Taller</span>
+          <span class="res-pill res-pill--ok" aria-label="Estado: Disponible">
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Disponible
+          </span>
+        </div>
+        <h3 class="audio-card__title" id="aud1-titulo">Audiodescripción de escena (taller 1)</h3>
+        <p class="audio-card__desc">
+          Audiodescripción elaborada en taller para acompañar una escena seleccionada del proyecto.
+        </p>
+      </div>
+
+      <div class="audio-card__player" aria-label="Reproductor de audio: Audiodescripción de escena taller 1">
+        <div class="video-placeholder audio-placeholder--player">
+          <div class="video-placeholder__inner">
+            <i class="fa-solid fa-ear-listen" aria-hidden="true"></i>
+            <strong>Escucha el audio descriptivo</strong>
+            <span>MP3 / reproducción web</span>
+          </div>
+
+          <audio controls preload="none" class="audio-card__native">
+            <source src="audio/FAUNO COMPLETO.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio HTML5.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card__footer">
+        <span class="video-card__meta-item">
+          <i class="fa-solid fa-clock" aria-hidden="true"></i>
+          Duración: por definir
+        </span>
+        <span class="video-card__meta-item">
+          <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
+          Audiodescripción
+        </span>
+      </div>
+    </article>
+
+    <!-- Audio 2 -->
+    <article class="audio-card" role="listitem" aria-labelledby="aud2-titulo">
+      <div class="audio-card__head">
+        <div class="audio-card__meta">
+          <span class="video-card__tag tag--audiodesc">Audiodescripción · Taller</span>
+          <span class="res-pill res-pill--ok" aria-label="Estado: Disponible">
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Disponible
+          </span>
+        </div>
+        <h3 class="audio-card__title" id="aud2-titulo">Audiodescripción de escena (taller 2)</h3>
+        <p class="audio-card__desc">
+          Segunda audiodescripción desarrollada en taller para una escena del universo narrativo.
+        </p>
+      </div>
+
+      <div class="audio-card__player" aria-label="Reproductor de audio: Audiodescripción de escena taller 2">
+        <div class="video-placeholder audio-placeholder--player">
+          <div class="video-placeholder__inner">
+            <i class="fa-solid fa-ear-listen" aria-hidden="true"></i>
+            <strong>Escucha el audio descriptivo</strong>
+            <span>MP3 / reproducción web</span>
+          </div>
+
+          <audio controls preload="none" class="audio-card__native">
+            <source src="audio/PALIDO COMPLETO.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio HTML5.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card__footer">
+        <span class="video-card__meta-item">
+          <i class="fa-solid fa-clock" aria-hidden="true"></i>
+          Duración: por definir
+        </span>
+        <span class="video-card__meta-item">
+          <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
+          Audiodescripción
+        </span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    <!-- ====================================================================
+         MODELOS 3D — EXPLORADOR ESCALABLE
+    ===================================================================== -->
+    <section class="res-section" id="modelos" aria-labelledby="modelos-title">
+      <div class="res-section__head">
+        <p class="res-section__label">Categoría de recursos</p>
+        <h2 class="res-h2" id="modelos-title">Modelos 3D</h2>
+        <p class="res-muted">
+          Explora los modelos del universo del proyecto. Pasa el cursor sobre las partes del modelo
+          para escuchar descripciones sonoras. Haz clic en una parte para ver más información.
+        </p>
+      </div>
+
+      <div class="model-explorer">
+        <div class="model-explorer__head">
+          <div>
+            <p class="model-explorer__eyebrow">Explorador de modelos</p>
+            <h3 class="res-h3">Visualización interactiva</h3>
+            <p class="res-muted">
+              Selecciona un modelo del catálogo para explorarlo. El audio descriptivo
+              se activa automáticamente al pasar sobre las partes del modelo.
+            </p>
+          </div>
+          <div class="model-explorer__chips" aria-label="Instrucciones de interacción">
+            <span class="model-chip"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i> Rotar</span>
+            <span class="model-chip"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i> Zoom</span>
+            <span class="model-chip"><i class="fa-solid fa-hand-pointer" aria-hidden="true"></i> Clic = info</span>
+            <span class="model-chip model-chip--audio"><i class="fa-solid fa-volume-high" aria-hidden="true"></i> Hover = audio</span>
+          </div>
+        </div>
+
+        <div class="model-explorer__grid">
+          <!-- Viewer -->
+          <div class="model-viewer-panel">
+            <div class="model-viewer-panel__top">
+              <div>
+                <p class="model-viewer-panel__label">Modelo seleccionado</p>
+                <h4 id="modeloSeleccionadoTitulo">Fauno — Modelo principal</h4>
+              </div>
+              <span class="res-pill res-pill--ok" id="modeloSeleccionadoEstado" aria-label="Estado: Disponible">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Disponible
+              </span>
+            </div>
+
+            <div class="modelo-embed">
+              <div class="viewer-wrap">
+                <canvas id="viewerCanvas" aria-label="Visualizador 3D del Fauno. Usa el ratón para rotar, hacer zoom y hacer clic en las partes."></canvas>
+
+                <div id="modeloPopup" class="modelo-popup hidden" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+                  <div class="popup-content">
+                    <button id="popupClose" type="button" aria-label="Cerrar ventana de información de la parte">×</button>
+                    <h3 id="popupTitle"></h3>
+                    <div class="popup-audio">
+                      <button id="popupAudioBtn" type="button" aria-label="Reproducir descripción de audio de esta parte">
+                        <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <p id="popupText"></p>
+                    <audio id="popupAudio" aria-hidden="true"></audio>
+                  </div>
+                </div>
+              </div>
+
+              <p class="modelo-debug" id="modeloDebug" aria-live="polite">Cargando modelo…</p>
+            </div>
+          </div>
+
+          <!-- Catálogo de modelos -->
+          <aside class="model-catalog" aria-labelledby="catalogo-modelos-title">
+            <div class="model-catalog__head">
+              <p class="model-catalog__label" id="catalogo-modelos-title">Catálogo de modelos</p>
+              <span class="model-catalog__count">4 modelos</span>
+            </div>
+
+            <div class="model-catalog__list" role="list">
+              <button class="model-catalog-item is-active" type="button" role="listitem" aria-current="true" aria-label="Fauno — Disponible. Actualmente seleccionado.">
+                <span class="model-catalog-item__dot is-available" aria-hidden="true"></span>
+                <div class="model-catalog-item__content">
+                  <strong>Fauno</strong>
+                  <span>.glb · Disponible</span>
+                </div>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              </button>
+
+              <button class="model-catalog-item is-disabled" type="button" role="listitem" aria-disabled="true" aria-label="Hada — Próximamente, no disponible aún" disabled>
+                <span class="model-catalog-item__dot is-soon" aria-hidden="true"></span>
+                <div class="model-catalog-item__content">
+                  <strong>Hada</strong>
+                  <span>.glb · Próximamente</span>
+                </div>
+                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              </button>
+
+              <button class="model-catalog-item is-disabled" type="button" role="listitem" aria-disabled="true" aria-label="Laberinto — Próximamente, no disponible aún" disabled>
+                <span class="model-catalog-item__dot is-soon" aria-hidden="true"></span>
+                <div class="model-catalog-item__content">
+                  <strong>Laberinto</strong>
+                  <span>.glb · Próximamente</span>
+                </div>
+                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              </button>
+
+              <button class="model-catalog-item is-disabled" type="button" role="listitem" aria-disabled="true" aria-label="Puerta de tiza — Próximamente, no disponible aún" disabled>
+                <span class="model-catalog-item__dot is-soon" aria-hidden="true"></span>
+                <div class="model-catalog-item__content">
+                  <strong>Puerta de tiza</strong>
+                  <span>.glb · Próximamente</span>
+                </div>
+                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              </button>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Barra de detalle del modelo -->
+        <div class="model-file-bar model-file-bar--noaction">
+          <div class="model-file-bar__main">
+            <div class="model-file-bar__icon" aria-hidden="true">
+              <i class="fa-solid fa-cube"></i>
+            </div>
+            <div class="model-file-bar__content">
+              <p class="model-file-bar__label">Modelo seleccionado</p>
+              <strong>Fauno — Modelo principal</strong>
+              <span>.glb · Modelo 3D · Visualización interactiva</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           FALLBACK ACCESIBLE — Lista de partes del modelo para lector de pantalla
+      ===================================================================== -->
+      <section class="partes-accesibles" id="partes-lista" aria-labelledby="partes-title">
+        <div class="partes-accesibles__head">
+          <div class="partes-accesibles__icon" aria-hidden="true">
+            <i class="fa-solid fa-list-ul"></i>
+          </div>
+          <div>
+            <p class="partes-accesibles__eyebrow">Alternativa accesible</p>
+            <h3 class="partes-accesibles__title" id="partes-title">Partes del Fauno — descripción por lista</h3>
+            <p class="partes-accesibles__desc">
+              Si usas lector de pantalla o prefieres no usar el visualizador 3D,
+              aquí puedes explorar cada parte del modelo con su descripción y audio.
+            </p>
+          </div>
+        </div>
+
+        <ul class="partes-list" aria-label="Lista de partes del modelo Fauno con descripción y audio">
+
+          <li class="parte-item" id="parte-cabeza">
+            <div class="parte-item__info">
+              <div class="parte-item__marker" aria-hidden="true">
+                <i class="fa-solid fa-circle-dot"></i>
+              </div>
+              <div class="parte-item__content">
+                <h4 class="parte-item__nombre">Cabeza</h4>
+                <p class="parte-item__desc">
+                  La cabeza es alargada y tiene rasgos marcados. La superficie no es lisa:
+                  tiene grietas y relieves. La textura se ve rugosa y desgastada.
+                </p>
+              </div>
+            </div>
+            <div class="parte-item__audio">
+              <button
+                type="button"
+                class="parte-audio-btn"
+                data-audio="audio/Cabeza_Descripcion.mp3"
+                aria-label="Escuchar descripción de audio de la Cabeza del Fauno"
+              >
+                <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
+                <span>Escuchar descripción</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="parte-item" id="parte-cuernos">
+            <div class="parte-item__info">
+              <div class="parte-item__marker" aria-hidden="true">
+                <i class="fa-solid fa-circle-dot"></i>
+              </div>
+              <div class="parte-item__content">
+                <h4 class="parte-item__nombre">Cuernos</h4>
+                <p class="parte-item__desc">
+                  Los cuernos salen desde la parte superior de la cabeza y se curvan hacia atrás.
+                  Son gruesos en la base y terminan en punta. Tienen líneas marcadas en la superficie.
+                </p>
+              </div>
+            </div>
+            <div class="parte-item__audio">
+              <button
+                type="button"
+                class="parte-audio-btn"
+                data-audio="audio/Cuernos_Descripcion.mp3"
+                aria-label="Escuchar descripción de audio de los Cuernos del Fauno"
+              >
+                <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
+                <span>Escuchar descripción</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="parte-item" id="parte-torso">
+            <div class="parte-item__info">
+              <div class="parte-item__marker" aria-hidden="true">
+                <i class="fa-solid fa-circle-dot"></i>
+              </div>
+              <div class="parte-item__content">
+                <h4 class="parte-item__nombre">Torso</h4>
+                <p class="parte-item__desc">
+                  El torso es fuerte y vertical. Se notan relieves que parecen costillas.
+                  La superficie tiene partes hundidas y partes que sobresalen.
+                </p>
+              </div>
+            </div>
+            <div class="parte-item__audio">
+              <button
+                type="button"
+                class="parte-audio-btn"
+                data-audio="audio/Torso_Descripcion.mp3"
+                aria-label="Escuchar descripción de audio del Torso del Fauno"
+              >
+                <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
+                <span>Escuchar descripción</span>
+              </button>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+    </section>
+
+  </main>
+
+  <footer class="repo-footer" role="contentinfo">
+    <p>© 2026 Cinergia 360 — Recursos del proyecto · <a href="repositorio.html">Volver al repositorio</a></p>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script type="module" src="fauno-modelo.js"></script>
+  <script src="fauno-recursos.js"></script>
+</body>
+</html>

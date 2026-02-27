@@ -1,0 +1,336 @@
+/* =========================================================
+   CINERGIA 360 · FAUNO RECURSOS (página específica)
+   Extiende repositorio.css + recursos.css
+   No duplica tokens ya definidos en repositorio.css
+========================================================= */
+
+/* ====== PILLS (faltaban en recursos.css) ====== */
+.res-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.32rem 0.6rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.res-pill--ok {
+  background: rgba(79, 143, 79, 0.10);
+  color: #376637;
+  border: 1px solid rgba(79, 143, 79, 0.20);
+}
+
+.res-pill--ok i { color: #4f8f4f; }
+
+.res-pill--soon {
+  background: rgba(240, 148, 19, 0.10);
+  color: #8a5500;
+  border: 1px solid rgba(240, 148, 19, 0.22);
+}
+
+.res-pill--soon i { color: var(--c360-orange); }
+
+/* ====================================================================
+   VIDEO — 3 CARDS EN GRID
+===================================================================== */
+.video-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.video-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  border: 1px solid rgba(18, 18, 18, 0.10);
+  background: rgba(255, 255, 255, 0.82);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+  border-color: rgba(76, 78, 133, 0.15);
+}
+
+.video-card__head {
+  padding: 1rem 1rem 0.85rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.video-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.video-card__tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.tag--intro {
+  background: rgba(76, 78, 133, 0.08);
+  color: var(--c360-indigo);
+  border-color: rgba(76, 78, 133, 0.14);
+}
+
+.tag--audiodesc {
+  background: rgba(240, 148, 19, 0.08);
+  color: #7a4e00;
+  border-color: rgba(240, 148, 19, 0.16);
+}
+
+.video-card__title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+}
+
+.video-card__desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(18, 18, 18, 0.68);
+}
+
+.video-card__embed {
+  padding: 0 1rem;
+}
+
+.video-card__embed .video-placeholder {
+  min-height: 180px;
+}
+
+.video-card__footer {
+  padding: 0.75rem 1rem 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  border-top: 1px solid rgba(18, 18, 18, 0.07);
+  margin-top: 0.75rem;
+}
+
+.video-card__meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  color: rgba(18, 18, 18, 0.55);
+}
+
+.video-card__meta-item i {
+  color: var(--c360-indigo);
+  opacity: 0.75;
+  font-size: 0.72rem;
+}
+
+/* Video placeholder ajustado para las cards */
+.video-card .video-placeholder {
+  border-radius: 10px;
+}
+
+/* ====================================================================
+   CHIP AUDIO (en explorador 3D)
+===================================================================== */
+.model-chip--audio {
+  background: rgba(76, 78, 133, 0.07);
+  border-color: rgba(76, 78, 133, 0.14);
+  color: var(--c360-indigo);
+}
+
+/* ====================================================================
+   FALLBACK ACCESIBLE — Lista de partes
+===================================================================== */
+.partes-accesibles {
+  margin-top: 2rem;
+  border: 1px solid rgba(18, 18, 18, 0.10);
+  background: rgba(255, 255, 255, 0.82);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+.partes-accesibles__head {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 0.85rem;
+  align-items: start;
+  padding: 1.1rem 1.1rem 0.85rem;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.08);
+  background: rgba(76, 78, 133, 0.03);
+}
+
+.partes-accesibles__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(76, 78, 133, 0.08);
+  border: 1px solid rgba(76, 78, 133, 0.14);
+  color: var(--c360-indigo);
+  font-size: 1.05rem;
+  flex-shrink: 0;
+}
+
+.partes-accesibles__eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--c360-indigo);
+  margin-bottom: 0.2rem;
+}
+
+.partes-accesibles__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+  margin-bottom: 0.3rem;
+}
+
+.partes-accesibles__desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(18, 18, 18, 0.66);
+}
+
+.partes-list {
+  list-style: none;
+  display: grid;
+  gap: 0;
+}
+
+.parte-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.07);
+  transition: background 0.18s ease;
+}
+
+.parte-item:last-child {
+  border-bottom: none;
+}
+
+.parte-item:hover {
+  background: rgba(76, 78, 133, 0.03);
+}
+
+.parte-item__info {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 0.65rem;
+  align-items: start;
+  min-width: 0;
+  flex: 1;
+}
+
+.parte-item__marker {
+  color: var(--c360-indigo);
+  opacity: 0.55;
+  font-size: 0.65rem;
+  margin-top: 0.35rem;
+}
+
+.parte-item__nombre {
+  font-size: 0.97rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+  margin-bottom: 0.3rem;
+}
+
+.parte-item__desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(18, 18, 18, 0.68);
+}
+
+.parte-item__audio {
+  flex-shrink: 0;
+}
+
+.parte-audio-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(76, 78, 133, 0.18);
+  background: rgba(76, 78, 133, 0.06);
+  color: var(--c360-indigo);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: 'Lexend', system-ui, sans-serif;
+  transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+
+.parte-audio-btn:hover {
+  background: rgba(76, 78, 133, 0.12);
+  border-color: rgba(76, 78, 133, 0.28);
+  transform: translateY(-1px);
+}
+
+.parte-audio-btn.is-playing {
+  background: var(--c360-indigo);
+  color: #fff;
+  border-color: var(--c360-indigo);
+}
+
+.parte-audio-btn:focus-visible {
+  outline: 2px solid var(--c360-indigo);
+  outline-offset: 2px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 1000px) {
+  .video-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 660px) {
+  .video-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partes-accesibles__head {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .partes-accesibles__icon {
+    display: none;
+  }
+
+  .parte-item {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .parte-audio-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
